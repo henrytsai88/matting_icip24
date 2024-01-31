@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>An Improved Sky Image Matting Method with a High-Resolution Dataset</title>
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+        <LINK REL="SHORTCUT ICON" HREF="assets/seal.svg">
+    </head>
+
+    <body bgcolor="#FFFFFF">
+        <center>
+            <H1>An Improved Sky Image Matting Method with a High-Resolution Dataset</H1>
+        </center>
+
+        <center>
+            Cheng-Yen Tsai, Zheng-Hui Huang, Wei-Lien Tang, Hsiu-Ting Yang, Jo-Fan Wu, Yung-Yu Chuang
+        </center>
+
+        <center>
+            National Taiwan University, ASUSTek Computer Inc.
+        </center>
+
+        <br>
+
+        <center>
+            <img src="assets/teaser.png" height=240>
+        </center>
+
+        <hr>
+
+        <h2>Abstract</h2>
+        This paper proposes an improved method for sky image matting. We present a high-resolution sky image matting dataset and generate accurate alpha mattes 
+        by leveraging a trimap-based image matting network with manually annotated trimaps. Next, we modify a general image matting network for sky matting. 
+        Specifically, we integrate CoordConv layers and a trainable guided filter into the network and conduct a preliminary study to find the optimal design. 
+        Experimental results demonstrate that our dataset provides a better training environment for various image matting networks compared to an existing sky 
+        image matting dataset in both quantitative metrics and visual quality. Additionally, our modified network shows superior performance compared to 
+        existing methods.
+
+        <h2>Dataset Overview</h2>
+        Our dataset contains 744 real-world images captured from mobile devices, with 2K resolution for each image. The testing set is created by randomly 
+        selecting 18 images from the dataset, while the training set consists of the remaining 726 images.
+
+        <h2>Downloads</h2>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1cmgzu1B6C8kYfjFdka_nutTKdWV8LoH4/view?usp=drive_link" target="_blank">images.zip</a> (873MB)</li>
+            <li><a href="https://drive.google.com/file/d/18y0Vs3aLT1Fv1T8Go737nUMKmB7B0YUo/view?usp=drive_link" target="_blank">matte.zip</a> (107.2MB)</li>
+            <li><a href="https://drive.google.com/file/d/1zmiPkbqq1K7L0VdwSm10EA23x3BLqNMz/view?usp=drive_link" target="_blank">train.txt</li>
+            <li><a href="https://drive.google.com/file/d/1-jwgYaEWgLtzvYOrPfdbXEx4tu_Zou5x/view?usp=drive_link" target="_blank">val.txt</a></li>
+        </ul>
+    </body>
+</html>
